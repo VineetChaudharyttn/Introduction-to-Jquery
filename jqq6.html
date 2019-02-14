@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+    	$("#main").replaceWith(function(){
+            return $("<p/>").append($(this).contents());
+        })
+    });
+ 
+    </script>
+</head>
+
+<body>
+    <div id="main">
+    Content of the div tag
+    </div>
+</body>
+</html>

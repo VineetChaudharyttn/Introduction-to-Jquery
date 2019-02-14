@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+    	$("#dis").click(function(){
+    		$("#test").attr("disabled", "disabled").css("color","red");
+    	});
+    });
+ 
+    </script>
+    <style type="text/css">
+    	#test{
+    		color: blue;
+    	}
+    </style>
+</head>
+
+<body>
+
+	<input type="button" name="btn" value="Disable" id="dis">
+    <br/>
+    <input type="submit" name="btn" id="test">
+</body>
+</html>
