@@ -25,12 +25,13 @@
 			$(document).ready(function(){
 
 			$('#parent').on("click", function(e) {
-				e.stopPropagation();
+				//e.stopPropagation();
 				alert('Parents Clicked!');	 
 			});
 			$('#child').on('click', function(e) {
 			    // clicked on descendant div
 			    e.stopPropagation();
+			    alert('clild Clicked!');	 
 			});
 
 			});
